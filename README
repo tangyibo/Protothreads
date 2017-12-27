@@ -1,3 +1,11 @@
+    Protothreads 是一种针对 C 语言封装后的宏函数库，为 C 语言模拟了一种无堆栈的轻量线程环境，能够实现模拟线
+程的条件阻塞、信号量操作等操作系统中特有的机制，从而使程序实现多线程操作。
+
+     每个 Protothreads 线程仅增加 10 行代码和 2 字节RAM的额外硬件资源消耗。对于资源紧缺而不能移植嵌入式操作
+系统的嵌入式系统，使用 Protothreads 能够方便直观地设计多任务程序，能够实现用线性程序结构处理事件驱动型程序和
+状态机程序，简化了该类程序的设计。
+
+
 Protothreads are extremely lightweight stackless threads designed for
 severely memory constrained systems such as small embedded systems or
 sensor network nodes. Protothreads can be used with or without an
