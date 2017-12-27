@@ -7,6 +7,12 @@
     每个 Protothreads 线程仅增加 10 行代码和 2 字节RAM的额外硬件资源消耗。对于资源紧缺而不能移植嵌入式操作系
     统的嵌入式系统，使用Protothreads 能够方便直观地设计多任务程序，能够实现用线性程序结构处理事件驱动型程序和
     状态机程序，简化了该类程序的设计。
+    
+    Protothread是专为资源有限的系统设计的一种耗费资源特别少并且不使用堆栈的线程模型，其特点是：  
+    ◆ 以纯C语言实现，无硬件依赖性；  
+    ◆ 极少的资源需求，每个Protothread仅需要2个额外的字节；  
+    ◆ 可以用于有操作系统或无操作系统的场合；  
+    ◆ 支持阻塞操作且没有栈的切换。
 
 
 Protothreads are extremely lightweight stackless threads designed for
